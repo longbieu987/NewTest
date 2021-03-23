@@ -28,9 +28,10 @@ class MainActivity : AppCompatActivity() {
             return "Nguyen" }
        GlobalScope.launch{
           val time = measureTimeMillis {
-              val last = async { lastName() }
-              val first = async { firstName() }
-              showName(first.await(),middleName(),last.await())
+              val first  = async { firstName() }
+              val middle  = async { middleName() }
+              val last  = async { lastName() }
+              showName(first.await(),middle.await(),last.await())
           }
            Log.d("BBB", "Time : $time")
        }
