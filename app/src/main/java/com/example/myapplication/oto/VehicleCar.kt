@@ -1,8 +1,6 @@
 package com.example.myapplication.oto
 
-import com.example.myapplication.PrintInformation
-
-abstract class VehicleCar(name : String, color: String, seat:Int) :PrintInformation{
+abstract class VehicleCar(name : String, color: String, seat:Int) {
     var name:String = name
         get() = field
         // setter
