@@ -1,7 +1,9 @@
 package com.example.myapplication.oto
 
-abstract class Oto(ten : String, color: String, gheNgoi:Int) {
-    var name:String = ten
+import com.example.myapplication.PrintInformation
+
+abstract class VehicleCar(name : String, color: String, seat:Int) :PrintInformation{
+    var name:String = name
         get() = field
         // setter
         set(name) {
@@ -12,14 +14,14 @@ abstract class Oto(ten : String, color: String, gheNgoi:Int) {
     set(color){
         field =color
     }
-    private var gheNgoi:Int = gheNgoi
+    private var seat:Int = seat
         get() = field
         set(color){
             field =color
         }
 
     abstract fun transport()
-    fun diChuyen(){
+    fun move(){
         println("Đi chuyển bằng bánh xe")
     }
     fun printName(name : String){
