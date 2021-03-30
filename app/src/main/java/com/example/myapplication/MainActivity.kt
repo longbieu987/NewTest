@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
         var xe : VehicleCar = Car("Mercedes","Black",4)
         xe.printInfo("New Car")
 
-
         xe = Truck("Small Truck","Black",2)
         xe.printInfo("Rental Truck ")
+
     }
 
 

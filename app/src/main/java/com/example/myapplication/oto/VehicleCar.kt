@@ -22,7 +22,7 @@ abstract class VehicleCar(name : String, color: String, seat:Int) :PrintInformat
 
     abstract fun transport()
     fun move(){
-        println("Đi chuyển bằng bánh xe")
+        println("Move by wheel ")
     }
     fun printName(name : String){
         println("Name = $name")
