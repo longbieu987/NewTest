@@ -13,14 +13,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var xeCon : Oto = Car("Mercedes","Black",4)
-        xeCon.printName()
-        xeCon.diChuyen()
-        xeCon.transport()
+        xe.printName()
+        xe.diChuyen()
+        xe.transport()
 
-        xeCon = Truck("Xe tải bé","Black",2)
-        xeCon.printName("Xe cua toi")
-        xeCon.diChuyen()
-        xeCon.transport()
+        xe = Truck("Xe tải bé","Black",2)
+        xe.printName("Xe cua toi")
+        xe.diChuyen()
+        xe.transport()
 
 
     }
