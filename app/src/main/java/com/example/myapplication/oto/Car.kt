@@ -6,11 +6,4 @@ class Car(name: String, var color: String, var seat: Int) :
         println("Transporting people ")
     }
 
-    override fun printInfo(info:String) {
-        println("Information Car: $info " +
-                "\nName : $name" +
-                "\nColor : $color" +
-                "\nSeat : $seat")
-    }
-
 }
