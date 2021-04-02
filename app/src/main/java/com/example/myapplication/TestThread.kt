@@ -8,7 +8,6 @@ fun main() {
     Thread {
         try {
             for (i in 0 until list.size) {
-                if(i%2==0)
                 list.remove(i)
                 println("${Thread.currentThread().name} list.get($i): ${list.get(i)}")
                 Thread.sleep(100)
@@ -21,9 +20,8 @@ fun main() {
     Thread {
         try {
             for (i in 0 until list.size) {
-
-                if (i % 2 == 1) {
-                    list.add(i + 4)
+                if (i % 4 == 0) {
+                    list.add(i,i+100)
                 }
                 println("${Thread.currentThread().name} list.get($i): ${list.get(i)}")
                 Thread.sleep(100)
